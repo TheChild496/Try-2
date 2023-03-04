@@ -1,0 +1,18 @@
+{
+  "item.tutorialmod.raw_musgravite": "Raw Musgravite",
+  "item.tutorialmod.musgravite": "Musgravite",
+  "item.tutorialmod.mole_spawn_egg": "Mole Spawn Egg",
+  "item.tutorialmod.musgravite_pickaxe": "Musgravite Pickaxe",
+  "item.tutorialmod.musgravite_axe": "Musgravite Axe",
+  "item.tutorialmod.musgravite_shovel": "Musgravite Shovel",
+  "item.tutorialmod.musgravite_hoe": "Musgravite Hoe",
+  "item.tutorialmod.musgravite_sword": "Musgravite Sword",
+
+  "block.tutorialmod.musgravite_block": "Musgravite Block",
+  "block.tutorialmod.musgravite_ore": "Musgravite Ore",
+  "block.tutorialmod.deepslate_musgravite_ore": "Deepslate Musgravite Ore",
+  "block.tutorialmod.end_musgravite_ore": "End Musgravite Ore",
+
+
+  "itemGroup.tutorialmod.musgravite": "Musgravite Mod Tab"
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:musgravite_ore",
+    "tutorialmod:musgravite_block",
+    "tutorialmod:deepslate_musgravite_ore"
+  ]
+}
