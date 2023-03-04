@@ -1,0 +1,19 @@
+{
+  "name": "Shovels",
+  "icon": "tutorialmod:musgravite_shovel",
+  "category": "tutorialmod:tools",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:musgravite_shovel",
+      "title": "",
+      "text": "A simple shovel shoddily made from musgravite and sticks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tutorialmod:musgravite_shovel_crafting_recipe",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

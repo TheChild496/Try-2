@@ -1,0 +1,19 @@
+{
+  "name": "Pickaxes",
+  "icon": "tutorialmod:musgravite_pickaxe",
+  "category": "tutorialmod:tools",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:musgravite_pickaxe",
+      "title": "",
+      "text": "A simple pickaxe shoddily made from musgravite and sticks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tutorialmod:musgravite_pickaxe_crafting_recipe",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

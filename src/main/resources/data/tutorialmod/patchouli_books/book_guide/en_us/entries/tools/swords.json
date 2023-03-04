@@ -1,0 +1,19 @@
+{
+  "name": "Swords",
+  "icon": "tutorialmod:musgravite_sword",
+  "category": "tutorialmod:tools",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:musgravite_sword",
+      "title": "",
+      "text": "A sharp sword made from musgravite and sticks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tutorialmod:musgravite_sword_crafting_recipe",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

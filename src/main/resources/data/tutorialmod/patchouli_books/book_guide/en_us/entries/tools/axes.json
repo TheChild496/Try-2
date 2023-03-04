@@ -1,0 +1,13 @@
+{
+  "name": "Axes",
+  "icon": "tutorialmod:musgravite_axe",
+  "category": "tutorialmod:tools",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:mole_spawn_egg",
+      "title": "",
+      "text": "A deadly mob that will eat your knees and kill your cats."
+    }
+  ]
+}

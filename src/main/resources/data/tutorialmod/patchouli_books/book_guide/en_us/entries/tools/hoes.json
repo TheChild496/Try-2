@@ -1,0 +1,19 @@
+{
+  "name": "Hoes",
+  "icon": "tutorialmod:musgravite_hoe",
+  "category": "tutorialmod:tools",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:musgravite_hoe",
+      "title": "",
+      "text": "A simple hoe shoddily made from musgravite and sticks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tutorialmod:musgravite_hoe_crafting_recipe",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

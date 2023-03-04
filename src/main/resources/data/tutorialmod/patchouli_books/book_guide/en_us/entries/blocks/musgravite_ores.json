@@ -1,0 +1,17 @@
+{
+  "name": "Musgravite Ore",
+  "icon": "tutorialmod:musgravite_ore",
+  "category": "tutorialmod:blocks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A gem ore block"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:musgravite_ore",
+      "title": "",
+      "text": "Generates from y 45 to y -50.  Requires a iron-tier pickaxe or higher. Drops Raw Musgravite that can be smelted into Musgravite."
+    }
+  ]
+}

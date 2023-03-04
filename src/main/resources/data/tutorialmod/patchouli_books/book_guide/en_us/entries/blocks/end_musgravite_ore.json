@@ -1,0 +1,17 @@
+{
+  "name": "End Musgravite Ore",
+  "icon": "tutorialmod:end_musgravite_ore",
+  "category": "tutorialmod:blocks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A gem ore block"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:end_musgravite_ore",
+      "title": "",
+      "text": "Generates in the end islands. Drops Raw Musgravite that can be smelted into Musgravite."
+    }
+  ]
+}

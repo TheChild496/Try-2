@@ -1,0 +1,17 @@
+{
+  "name": "Mole",
+  "icon": "tutorialmod:mole_spawn_egg",
+  "category": "tutorialmod:mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A dangerous mob"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tutorialmod:musgravite_ore",
+      "title": "",
+      "text": "Generates from y 45 to y -50.  Requires a iron-tier pickaxe or higher. Drops Raw Musgravite that can be smelted into Musgravite."
+    }
+  ]
+}
