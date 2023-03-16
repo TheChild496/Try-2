@@ -25,7 +25,8 @@ repositories {
 	}
 
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
-}
+
+	maven { url 'https://maven.blamejared.com' }
 
 dependencies {
 	// To change the versions see the gradle.properties file
@@ -42,6 +43,7 @@ dependencies {
 
 	modImplementation  ("curse.maven:reborncore-237903:3902448")
 	modImplementation  ("curse.maven:techreborn-233564:3902447")
+	modImplementation  ("curse.maven:patchouli-fabric-393236:4031404")
 
 	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.18'
 
@@ -92,4 +94,5 @@ publishing {
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
 	}
+}
 }
