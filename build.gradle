@@ -16,14 +16,10 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
-	maven {
-		url "https://cursemaven.com"
-		content {
-			includeGroup "curse.maven"
-		}
+	maven { name = "CurseMaven"; url "https://cursemaven.com"; content { includeGroup "curse.maven" }
 	}
 
-	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+	maven { name = "GeckLibs-Fabric"; url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 
 	maven { url 'https://maven.blamejared.com' }
 
