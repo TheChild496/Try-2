@@ -18,9 +18,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
     public static final Item MUSGRAVITE = registerItem("musgravite",
             new Item(new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
-    }
+
     public static final Item MOLE_SPAWN_EGG = registerItem("mole_spawn_egg",
             new SpawnEggItem(ModEntities.MOLE,0x22b341, 0x19732e,
                     new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
@@ -41,6 +39,9 @@ public class ModItems {
 			new ShovelItem(ModToolMaterial.MUSGRAVITE, 0, 1f,
 					new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
 
+	private static Item registerItem(String name, Item item) {
+		return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MODID, name), item);
+	}
 
     public static void registerModItems() {
         TutorialMod.LOGGER.debug("Registering Mod Items for " + TutorialMod.MOD_ID);
