@@ -6,7 +6,9 @@ import net.kaupenjoe.tutorialmod.world.feature.ModPlacedFeatures;
 import net.minecraft.world.gen.GenerationStep;
 
 public class ModOreGeneration {
-    public static void generateOres() {
+
+	public static void generateOres() {
+
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.MUSGRAVITE_ORE_PLACED.getKey().get());
 

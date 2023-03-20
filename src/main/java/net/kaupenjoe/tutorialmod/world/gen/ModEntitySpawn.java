@@ -10,7 +10,9 @@ import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;
 
 public class ModEntitySpawn {
+
     public static void addEntitySpawn() {
+
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.FOREST), SpawnGroup.MONSTER,
                 ModEntities.MOLE, 50, 1, 3);
 
