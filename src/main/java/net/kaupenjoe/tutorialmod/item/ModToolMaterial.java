@@ -29,27 +29,15 @@ public enum ModToolMaterial implements ToolMaterial {
         this.repairIngredient = new Lazy(repairIngredient);
     }
 
-    public int getDurability() {
-        return this.itemDurability;
-    }
+    public int getDurability() { return this.itemDurability; }
 
-    public float getMiningSpeedMultiplier() {
-        return this.miningSpeed;
-    }
+    public float getMiningSpeedMultiplier() { return this.miningSpeed; }
 
-    public float getAttackDamage() {
-        return this.attackDamage;
-    }
+    public float getAttackDamage() { return this.attackDamage; }
 
-    public int getMiningLevel() {
-        return this.miningLevel;
-    }
+    public int getMiningLevel() { return this.miningLevel; }
 
-    public int getEnchantability() {
-        return this.enchantability;
-    }
+    public int getEnchantability() { return this.enchantability; }
 
-    public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
-    }
+    public Ingredient getRepairIngredient() { return this.repairIngredient.get(); }
 }
