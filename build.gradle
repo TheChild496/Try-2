@@ -22,6 +22,7 @@ repositories {
 	maven { name = "GeckLibs-Fabric"; url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 
 	maven { url 'https://maven.blamejared.com' }
+}
 
 dependencies {
 	// To change the versions see the gradle.properties file
