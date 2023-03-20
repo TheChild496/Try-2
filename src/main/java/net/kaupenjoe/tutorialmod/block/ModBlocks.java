@@ -14,6 +14,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
+import static net.kaupenjoe.tutorialmod.TutorialMod.MODID;
+
 public class ModBlocks {
     public static final Block MUSGRAVITE_BLOCK = registerBlock("musgravite_block",
             new MusgraviteBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.MUSGRAVITE);
