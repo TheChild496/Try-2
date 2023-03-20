@@ -8,7 +8,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -32,7 +31,7 @@ public class ModBlocks {
                     UniformIntProvider.create(3, 7)), ModItemGroup.MUSGRAVITE);
 
 
-    private static Block registerBlock(String name, Block block, ItemGroup tab) {
+    public static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(MODID, name), block);
     }
