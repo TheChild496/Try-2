@@ -8,9 +8,8 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    MUSGRAVITE(3, 250, 15.0F, 2.0F, 24, () -> {
-        return Ingredient.ofItems(ModItems.MUSGRAVITE);
-    });
+    MUSGRAVITE(3, 250, 15.0F, 2.0F, 24,
+			() -> Ingredient.ofItems(ModItems.MUSGRAVITE));
 
     private final int miningLevel;
     private final int itemDurability;
