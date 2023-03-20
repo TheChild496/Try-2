@@ -13,6 +13,8 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static net.kaupenjoe.tutorialmod.TutorialMod.MODID;
+
 public class ModItems {
     public static final Item RAW_MUSGRAVITE = registerItem("raw_musgravite",
             new Item(new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
@@ -40,10 +42,8 @@ public class ModItems {
 					new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
 
 	private static Item registerItem(String name, Item item) {
-		return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MODID, name), item);
+		return Registry.register(Registry.ITEM, new Identifier(MODID, name), item);
 	}
 
-    public static void registerModItems() {
-        TutorialMod.LOGGER.debug("Registering Mod Items for " + TutorialMod.MOD_ID);
-    }
+    public static void registerModItems() { TutorialMod.LOGGER.debug("Registering Mod Items for " + MODID); }
 }
