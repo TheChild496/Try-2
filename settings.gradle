@@ -1,10 +1,14 @@
 pluginManagement {
     repositories {
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+
+        maven { name = 'Fabric' ; url = 'https://maven.fabricmc.net/' }
+
     }
 }
+
+rootProject.name = "Tutorial-Mod 1.19.2 Fabric"
+
+// include ('Common', 'Fabric', 'Forge')
