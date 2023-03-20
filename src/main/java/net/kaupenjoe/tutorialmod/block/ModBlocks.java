@@ -37,10 +37,10 @@ public class ModBlocks {
         return Registry.register(Registry.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
-        return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(tab)));
-    }
+    private static void registerBlockItem(String name, Block block, ItemGroup tab) {
+		Registry.register(Registry.ITEM, new Identifier(MODID, name),
+				new BlockItem(block, new FabricItemSettings().group(tab)));
+	}
 
     public static void registerModBlocks() {
         TutorialMod.LOGGER.debug("Registering ModBlocks for " + TutorialMod.MOD_ID);
