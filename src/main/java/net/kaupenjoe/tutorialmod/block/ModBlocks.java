@@ -34,7 +34,7 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
-        return Registry.register(Registry.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(MODID, name), block);
     }
 
     private static void registerBlockItem(String name, Block block, ItemGroup tab) {
@@ -43,6 +43,6 @@ public class ModBlocks {
 	}
 
     public static void registerModBlocks() {
-        TutorialMod.LOGGER.debug("Registering ModBlocks for " + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.debug("Registering ModBlocks for " + MODID);
     }
 }
