@@ -7,7 +7,7 @@ import net.kaupenjoe.tutorialmod.entity.ModEntities;
 import net.kaupenjoe.tutorialmod.entity.custom.MoleEntity;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.world.dimensions.ModDimensions;
-import net.kaupenjoe.tutorialmod.world.gen.ModOreGeneration;
+import net.kaupenjoe.tutorialmod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib3.GeckoLib;
@@ -21,10 +21,12 @@ public class TutorialMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModOreGeneration.generateOres();
-		GeckoLib.initialize();
+		ModItems.registerModItems();
 
 		ModDimensions.register();
+		ModWorldGen.generateWorldGen();
+
+		GeckoLib.initialize();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MOLE, MoleEntity.setAttributes());
 
