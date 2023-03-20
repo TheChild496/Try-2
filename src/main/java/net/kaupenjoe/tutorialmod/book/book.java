@@ -1,2 +1,5 @@
-package net.kaupenjoe.tutorialmod.book;public class book {
+package net.kaupenjoe.tutorialmod.book;
+
+
+public class book {
 }
