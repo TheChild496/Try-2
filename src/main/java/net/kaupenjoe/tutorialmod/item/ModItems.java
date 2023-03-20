@@ -28,11 +28,7 @@ public class ModItems {
     public static final Item MUSGRAVITE_SWORD = registerItem("musgravite_sword",
             new SwordItem(ModToolMaterial.MUSGRAVITE, 2, 1f,
                     new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
-    public static final Item MUSGRAVITE_SHOVEL = registerItem("musgravite_shovel",
-            new ShovelItem(ModToolMaterial.MUSGRAVITE, 0, 1f,
-                    new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
-
-    public static final Item MUSGRAVITE_PICKAXE = registerItem("musgravite_pickaxe",
+	public static final Item MUSGRAVITE_PICKAXE = registerItem("musgravite_pickaxe",
             new ModPickaxeItem(ModToolMaterial.MUSGRAVITE, 0, 1f,
                     new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
     public static final Item MUSGRAVITE_AXE = registerItem("musgravite_axe",
@@ -41,6 +37,9 @@ public class ModItems {
     public static final Item MUSGRAVITE_HOE = registerItem("musgravite_hoe",
             new ModHoeItem(ModToolMaterial.MUSGRAVITE, 0, 0f,
                     new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
+	public static final Item MUSGRAVITE_SHOVEL = registerItem("musgravite_shovel",
+			new ShovelItem(ModToolMaterial.MUSGRAVITE, 0, 1f,
+					new FabricItemSettings().group(ModItemGroup.MUSGRAVITE)));
 
 
     public static void registerModItems() {
