@@ -1,0 +1,90 @@
+{
+	"temperature": 0.9,
+	"downfall": 0.5,
+	"precipitation": "rain",
+	"creature_spawn_probability": 0.5,
+	"effects": {
+		"sky_color": 2955798,
+		"fog_color": 1712955,
+		"water_color": 4159204,
+		"water_fog_color": 9472963,
+		"grass_color": 1359314,
+		"particle": {
+			"options": {
+				"type": "minecraft:end_rod"
+			},
+			"probability": 0.002
+		}
+	},
+	"spawners": {
+		"monster": [
+			{
+				"type": "minecraft:ghast",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 3
+			}
+		]
+	},
+	"spawn_costs": {
+		"minecraft:ghast": {
+			"energy_budget": 0.12,
+			"charge": 1
+		}
+	},
+	"carvers": {
+		"air": [
+			"minecraft:canyon",
+			"minecraft:cave",
+			"minecraft:cave_extra_underground"
+		]
+	},
+	"features": [
+		[],
+		[
+			"minecraft:lake_lava_underground"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[],
+		[],
+		[],
+		[
+			"minecraft:ore_dirt",
+			"minecraft:ore_gravel",
+			"minecraft:ore_granite_upper",
+			"minecraft:ore_granite_lower",
+			"minecraft:ore_diorite_upper",
+			"minecraft:ore_diorite_lower",
+			"minecraft:ore_andesite_upper",
+			"minecraft:ore_andesite_lower",
+			"minecraft:ore_tuff",
+			"minecraft:ore_coal_upper",
+			"minecraft:ore_coal_lower",
+			"minecraft:ore_iron_upper",
+			"minecraft:ore_iron_middle",
+			"minecraft:ore_iron_small",
+			"minecraft:ore_gold",
+			"minecraft:ore_gold_lower",
+			"minecraft:ore_redstone",
+			"minecraft:ore_redstone_lower",
+			"minecraft:ore_diamond",
+			"minecraft:ore_diamond_large",
+			"minecraft:ore_diamond_buried",
+			"minecraft:ore_lapis",
+			"minecraft:ore_lapis_buried",
+			"minecraft:ore_copper"
+		],
+		[],
+		[
+			"minecraft:spring_water"
+		],
+		[
+			"minecraft:patch_grass_badlands"
+		],
+		[],
+		[]
+	]
+}
+
