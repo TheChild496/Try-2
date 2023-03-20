@@ -5,7 +5,7 @@
     "settings": "minecraft:overworld",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "tutorialmod:corupt_plains"
+      "biome": "tutorialmod:corrupt_plains"
     }
   },
   "type": "tutorialmod:kjdim_type"
