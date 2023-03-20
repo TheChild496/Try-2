@@ -2,6 +2,7 @@
 	"type": "tutorialmod:kjdim_type",
   "generator": {
     "type": "minecraft:noise",
+	  "seed": -5431258431,
     "settings": "minecraft:overworld",
     "biome_source": {
       "type": "minecraft:fixed",
