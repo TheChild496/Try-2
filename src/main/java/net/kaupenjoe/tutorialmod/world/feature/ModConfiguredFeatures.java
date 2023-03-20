@@ -9,6 +9,8 @@ import net.minecraft.world.gen.feature.*;
 
 import java.util.List;
 
+import static net.kaupenjoe.tutorialmod.TutorialMod.MODID;
+
 public class ModConfiguredFeatures {
     public static final List<OreFeatureConfig.Target> OVERWORLD_MUSGRAVITE_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MUSGRAVITE_ORE.getDefaultState()),
@@ -24,6 +26,6 @@ public class ModConfiguredFeatures {
             ConfiguredFeatures.register("end_musgravite_ore",Feature.ORE, new OreFeatureConfig(END_MUSGRAVITE_ORES, 12));
 
     public static void registerConfiguredFeatures() {
-        TutorialMod.LOGGER.debug("Registering the ModConfiguredFeatures for " + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.debug("Registering the ModConfiguredFeatures for " + MODID);
     }
 }
