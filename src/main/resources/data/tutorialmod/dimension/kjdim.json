@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:overworld",
+	"type": "tutorialmod:kjdim_type",
   "generator": {
     "type": "minecraft:noise",
     "settings": "minecraft:overworld",
@@ -7,6 +7,5 @@
       "type": "minecraft:fixed",
       "biome": "tutorialmod:corrupt_plains"
     }
-  },
-  "type": "tutorialmod:kjdim_type"
+  }
 }
