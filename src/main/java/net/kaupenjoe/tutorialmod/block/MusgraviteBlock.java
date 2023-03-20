@@ -15,9 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class MusgraviteBlock extends Block {
-    public MusgraviteBlock(Settings settings) {
-        super(settings);
-    }
+    public MusgraviteBlock(Settings settings) { super(settings); }
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -27,14 +25,14 @@ public class MusgraviteBlock extends Block {
                 if (server != null) {
                     if (player instanceof ServerPlayerEntity) {
                         ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
-                        if (world.getRegistryKey() == ModDimensions.KJDIM_KEY) {
+                        if (world.getRegistryKey() == ModDimensions.KJDIM_DIMESION_KEY) {
                             ServerWorld overWorld = server.getWorld(World.OVERWORLD);
                             if (overWorld != null) {
                                 BlockPos destPos = getDest(player.getBlockPos(), overWorld, false);
                                 serverPlayer.teleport(overWorld, destPos.getX(), destPos.getY(), destPos.getZ(), serverPlayer.getYaw(), serverPlayer.getPitch());
                             }
                         } else {
-                            ServerWorld daylightWorld = server.getWorld(ModDimensions.KJDIM_KEY);
+                            ServerWorld daylightWorld = server.getWorld(ModDimensions.KJDIM_DIMESION_KEY);
                             if (daylightWorld != null) {
                                 BlockPos destPos = getDest(serverPlayer.getBlockPos(), daylightWorld, true);
                                 boolean doSetBlock = true;
