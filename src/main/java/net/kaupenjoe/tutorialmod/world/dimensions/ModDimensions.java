@@ -8,6 +8,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.dimension.DimensionOptions;
 import net.minecraft.world.dimension.DimensionType;
 
+import static net.kaupenjoe.tutorialmod.TutorialMod.MODID;
+
 public class ModDimensions {
     private static final RegistryKey<DimensionOptions> DIMENSION_KEY = RegistryKey.of(Registry.DIMENSION_KEY,
             new Identifier(TutorialMod.MOD_ID, "kjdim"));
@@ -15,7 +17,6 @@ public class ModDimensions {
     private static final RegistryKey<DimensionType> DIMENSION_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
             new Identifier(TutorialMod.MOD_ID, "kjdim_type"));
 
-    public static void register() {
-        System.out.println("Registering ModDimensions for " + TutorialMod.MOD_ID);
-    }
+
+    public static void register() { TutorialMod.LOGGER.debug("Registering ModDimensions for " + MODID); }
 }
