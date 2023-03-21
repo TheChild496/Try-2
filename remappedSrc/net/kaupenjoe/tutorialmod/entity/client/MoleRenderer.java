@@ -1,5 +1,6 @@
 package net.kaupenjoe.tutorialmod.entity.client;
 
+import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.entity.custom.MoleEntity;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
@@ -9,8 +10,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 
-import static net.kaupenjoe.tutorialmod.TutorialMod.MODID;
-
 public class MoleRenderer extends GeoEntityRenderer<MoleEntity> {
     public MoleRenderer(EntityRendererFactory.Context ctx) {
         super(ctx, new MoleModel());
@@ -19,7 +18,7 @@ public class MoleRenderer extends GeoEntityRenderer<MoleEntity> {
 
     @Override
     public Identifier getTextureResource(MoleEntity instance) {
-        return new Identifier(MODID, "textures/entity/mole.png");
+        return new Identifier(TutorialMod.MODID, "textures/entity/mole.png");
     }
 
     @Override

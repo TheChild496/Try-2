@@ -3,6 +3,7 @@
   "values": [
     "tutorialmod:musgravite_ore",
     "tutorialmod:musgravite_block",
-    "tutorialmod:deepslate_musgravite_ore"
+    "tutorialmod:deepslate_musgravite_ore",
+	  "tutorialmod:end_musgravite_ore"
   ]
 }

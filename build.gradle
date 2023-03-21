@@ -1,10 +1,9 @@
 plugins {
-	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'fabric-loom' version '1.1-SNAPSHOT'
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -17,16 +16,13 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
-	maven {
-		url "https://cursemaven.com"
-		content {
-			includeGroup "curse.maven"
-		}
+	maven { name = "CurseMaven"; url "https://cursemaven.com"; content { includeGroup "curse.maven" }
 	}
 
-	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+	maven { name = "GeckLibs-Fabric"; url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 
 	maven { url 'https://maven.blamejared.com' }
+}
 
 dependencies {
 	// To change the versions see the gradle.properties file
@@ -34,27 +30,28 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    // Uncomment the following line to enable the deprecated Fabric API modules.
+    // These are included in the Fabric API production distribution and allow you
+    // to update your mod to the latest modules at a later more convenient time.
+    // Fabric API. This is technically optional, but you probably want it anyway.
 
-	include modApi('teamreborn:energy:2.2.0') {
+    modImplementation ("net.fabricmc.fabric-api:fabric-api:${project.fabric_version}")
+
+	include modApi('teamreborn:energy:2.3.0') {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
 
-	modImplementation  ("curse.maven:reborncore-237903:3902448")
-	modImplementation  ("curse.maven:techreborn-233564:3902447")
-	modImplementation  ("curse.maven:patchouli-fabric-393236:4031404")
+	modImplementation  ("curse.maven:reborncore-237903:4102771") // 3902448")
+	modImplementation  ("curse.maven:techreborn-233564:4102770") // 3902447")
 
-	modImplementation ("software.bernie.geckolib:geckolib-fabric-1.19:3.1.18")
+    // modImplementation  ("curse.maven:patchouli-fabric-393236:4031404")
 
-	// Uncomment the following line to enable the deprecated Fabric API modules.
-	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
-
-	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+	modImplementation ("software.bernie.geckolib:geckolib-fabric-1.19:3.1.40") // 18')
 }
 
 processResources {
 	inputs.property "version", project.version
+    filteringCharset "UTF-8"
 
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
@@ -94,5 +91,4 @@ publishing {
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
 	}
-}
 }

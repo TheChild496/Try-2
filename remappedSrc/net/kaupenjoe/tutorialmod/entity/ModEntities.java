@@ -1,6 +1,7 @@
 package net.kaupenjoe.tutorialmod.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.entity.custom.MoleEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;

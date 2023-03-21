@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:overworld",
+	"type": "tutorialmod:kjdim_type",
   "generator": {
     "type": "minecraft:noise",
+	  "seed": -5431258431,
     "settings": "minecraft:overworld",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "tutorialmod:corupt_plains"
+      "biome": "tutorialmod:corrupt_plains"
     }
-  },
-  "type": "tutorialmod:kjdim_type"
+  }
 }

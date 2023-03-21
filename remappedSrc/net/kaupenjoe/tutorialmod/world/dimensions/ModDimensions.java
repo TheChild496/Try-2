@@ -16,6 +16,5 @@ public class ModDimensions {
 	static final RegistryKey<DimensionType> KJDIM_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
 			KJDIM_DIMESION_KEY.getValue());
 
-
     public static void register() { TutorialMod.LOGGER.debug("Registering ModDimensions for " + MODID); }
 }
